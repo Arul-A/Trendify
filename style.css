@@ -25,9 +25,14 @@ body{
     text-decoration: underline;
     color: #1d232c;
 }
+.navbar-menu-toggle{
+    cursor: pointer;
+
+}
 /* side-navbar */
 
 .side-navbar{
+    cursor: pointer;
     background-color: #1d232c;
     width: 50%;
     height: 100%;
@@ -52,6 +57,188 @@ body{
 .side-navbar-links a:hover{
     color: black;
 }
+/* header*/
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.header-button{
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: #1d232c;
+    color: white;
+}
+/* Services*/
+.services{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.services div{
+    background-color: #f2f4f7;
+    padding: 10px;
+    border: 5px solid white;
+
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.new-arriva-l{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival-1 button{
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    border: none;
+    background-color: #e0e4eb;
+    color: black;
+    position: relative;
+    bottom: 20%;
+    left: 20%;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+.news button{
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.news button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.footer{
+    display: block;
+    background-color: #1d232c;
+    color: white;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.footer div{
+    margin-left: 50px;
+}
+.footer div h2{
+    text-decoration: underline;
+}
+.products-section{
+    margin-top: 20px;
+}
+.product-search{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-box{
+    text-align: center;
+    flex-basis: 20%;
+
+}
+.contact{
+    width: 80%;
+    margin: 50px auto;
+}
+.contact-box{
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background-color: #1d232c;
+    color: white;
+
+}
+.contact h1{
+    margin-bottom: 10px;
+}
+.contact p{
+    margin-bottom: 10px;   
+}
+.input-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+.input-row input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid black;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contactbtn{
+    background: #d4cff1;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 30px;
+    color: black;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+tr td:first-child{
+    padding-right: 20px;
+}
+tr td{
+    padding-top: 30px;
+}
+
 /* Media Query */
 @media screen and (max-width:700px) {
     .navbar-menu-toggle{
@@ -60,12 +247,21 @@ body{
     .navbar-links{
         display: none;
     }
+    .header-image{
+        display: none;
+    }
+    .services{
+        flex-direction: column;
+    }
+    .contact-box{
+        flex-direction: column;
+    }
 }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:900px) {
     .navbar-menu-toggle{
         display: none;
     }
-@media screen and (min-width:1200px) {
+@media screen and (min-width:900px) {
     .side-navbar{
         display: none;
     }
